@@ -1,0 +1,26 @@
+[package]
+name = "candle_util"
+license = "MIT"
+version = "0.1.0"
+edition = "2021"
+description = "Candle and Candle Utilties"
+readme = "README.md"
+homepage = "https://github.com/Ohkthx/candle_util-rs"
+repository = "https://github.com/Ohkthx/candle_util-rs"
+keywords = ["candle", "signal", "technical", "analysis", "ta"]
+include = ["*/**/***.rs"]
+
+[features]
+default = []
+f32 = []
+i64 = []
+
+[[example]]
+name = "candle"
+path = "examples/candle.rs"
+
+
+[dependencies]
+candle_derive = { path = "./candle_derive" }
+serde = { version = "1.0.189", features = ["derive"] }
+serde_json = { version = "1.0.107" }

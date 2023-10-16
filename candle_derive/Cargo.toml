@@ -1,0 +1,17 @@
+[package]
+name = "candle_derive"
+license = "MIT"
+version = "0.1.0"
+edition = "2021"
+description = "Derives for Candle Utility"
+homepage = "https://github.com/Ohkthx/candle_util-rs"
+repository = "https://github.com/Ohkthx/candle_util-rs"
+keywords = ["candle", "signal", "technical", "analysis", "ta"]
+include = ["*/**/***.rs"]
+
+[dependencies]
+quote = { version = "1.0.33" }
+syn = { version = "2.0.38" }
+
+[lib]
+proc-macro = true
