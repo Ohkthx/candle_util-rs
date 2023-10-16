@@ -1,8 +1,10 @@
 mod candle;
-pub mod traits;
 mod utils;
 
+pub mod traits;
+
 pub use candle::Candle;
+pub use candle_derive;
 
 /// Represents the internally used floating type for the crate.
 #[cfg(not(feature = "f32"))]
